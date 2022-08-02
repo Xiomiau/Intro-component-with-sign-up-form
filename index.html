@@ -30,18 +30,38 @@
   </div>
 
   <form>
-    <input placeholder="First Name" type="text" name="firstName" id="firstName"> 
-    <input placeholder="Last Name " type="text" name="lastName" id="lastName">
-    <input placeholder="Email Address" type="email" name="emailAdress" id="emailAdress">
-    <input placeholder="Password" type="password" name="password" id="password">
+    <!-- INPUT NAME -->
+    
+      <input autofocus required placeholder="First Name" type="text" name="firstName" id="firstName">
+      <!-- ERROR CONTAINER -->
+      <div id="firstNameError" class="error-container">  
+        <img id="icon-error" class="error-icon" src="/images/icon-error.svg" alt="icon error">
+        <p id="nameError" class="text-error">First name cannot be empty</p>
+      </div> 
 
-  <button>Claim your free trial</button> 
+    <!-- INPUT LAST-NAME -->
+    <input required placeholder="Last Name " type="text" name="lastName" id="lastName">
+    <div id="lastNameError" class="error-container"> </div>
+    
+
+    <!-- INPUT EMAIL -->
+    <input required placeholder="Email Address" type="email" name="emailAdress" id="emailAdress">
+    <div id="emailError" class="error-container"></div>
+
+          <!-- INPUT PASSWORD -->
+          <input required placeholder="Password" type="password" name="password" id="password">
+          <div id="passwordError" class="error-container"> </div>
+    
+
+  <button id="button" type="submit">Claim your free trial</button> 
 
   <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
   </form>
 </section>
   
   </main>
+
+  <script src="/main.js"></script>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

@@ -1,17 +1,19 @@
 .container {
     display: grid;
-    grid-template-columns: 400px 1fr;
+    grid-template-columns: 500px 500px;
     place-items: center;
     margin: 150px auto;
-    background-color: antiquewhite;
+    max-width: 1000px;
 }
 
 .form-container {
-    width: 60%;
+    width: 80%;
+    margin: 0;
 }
 
 .form-container-purple {
     height: 40px;
+    margin: 0;
 }
 
 .container-text {
@@ -32,5 +34,4 @@
     text-align: left;
     font-size: 15px;
     width: 100%;
-    background-color: aquamarine;
 }

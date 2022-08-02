@@ -77,10 +77,31 @@ input {
     width: 100%;
     padding: 15px;
     border-radius: 5px;
-    margin: 5px 0;
+    margin: 10px 0;
     border: 1px solid rgb(212, 212, 212); 
 }
 
+.error-container {
+    position: relative;
+    background-color: aqua;
+    margin-bottom: 10px;
+
+}
+.error-icon { 
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+    
+}
+
+form p {
+    font-size: 10px;
+    color: var(--Red);
+    position: absolute;
+    right: 15px;
+    top: -7px;
+    
+}
 
 ::placeholder {
     font-weight: bold;
@@ -106,6 +127,7 @@ button {
     font-size: 10px;
     color: var(--Grayish-Blue);
     text-align: center;
+    position: static;
 }
 
 
@@ -127,5 +149,9 @@ footer a {
     text-decoration: none;
     color: var(--Blue);
     font-weight: bold;
+}
+
+.inactive {
+    /* display: none; */
 }
 
